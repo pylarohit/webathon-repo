@@ -213,19 +213,19 @@ export function AppSidebar() {
                     <Link href="/home/ai-tools/roadmap-maker">AI Roadmap </Link>
                   </SidebarMenuSubItem>
 
-                  {/* <SidebarMenuSubItem className="font-inter font-medium text-gray-200 cursor-pointer text-base hover:text-white hover:translate-x-2 duration-200">
+                  <SidebarMenuSubItem className="font-inter font-medium text-gray-200 cursor-pointer text-base hover:text-white hover:translate-x-2 duration-200">
                     <Link href="/home/job-tracker">AI Job Tracker </Link>
-                  </SidebarMenuSubItem> */}
+                  </SidebarMenuSubItem>
 
 
-                  {/* <SidebarMenuSubItem className="font-inter font-medium text-gray-200 cursor-pointer text-base hover:text-white hover:translate-x-2 duration-200 whitespace-nowrap">
+                  <SidebarMenuSubItem className="font-inter font-medium text-gray-200 cursor-pointer text-base hover:text-white hover:translate-x-2 duration-200 whitespace-nowrap">
                     <Link href="/home/interview-prep">
                       AI Interview Prep{" "}
                       <span className="font-inter text-xs text-pink-500 ml-3">
                         Pro
                       </span>
                     </Link>
-                  </SidebarMenuSubItem> */}
+                  </SidebarMenuSubItem>
                 </SidebarMenuSub>
               </CollapsibleContent>
             </Collapsible>
