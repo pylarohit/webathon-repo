@@ -493,6 +493,9 @@ export async function updateSelectedCareer(
   selectedCareer: string
 ) {
   const supabase = createClient();
+  console.log("USER ID--------------->", userId)
+  console.log("Selected Carrer--------------->", selectedCareer)
+
 
   const { data, error } = await supabase
     .from("userQuizData")
