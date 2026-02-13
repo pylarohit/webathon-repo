@@ -14,7 +14,7 @@ import {
 import "@xyflow/react/dist/style.css";
 import html2canvas from "html2canvas";
 import { Button } from "@/components/ui/button";
-import { LuDownload } from "react-icons/lu";
+import { LuDownload, LuExternalLink } from "react-icons/lu";
 import { toast } from "sonner";
 
 import { toPng } from "html-to-image";
@@ -32,7 +32,7 @@ interface RoadmapProps {
 // 🔹 Custom Node Component
 function CustomNode({ data }: any) {
   return (
-    <div className="bg-blue-50 border rounded-lg shadow-md p-3 w-64 relative">
+    <div className="bg-white border rounded-lg shadow-md p-3 w-64 relative">
       <div className="absolute -top-3 -left-3 w-6 h-6 bg-blue-600 text-white text-xs rounded-full flex items-center justify-center font-bold">
         {data.step}
       </div>
@@ -40,15 +40,15 @@ function CustomNode({ data }: any) {
       <h3 className="font-semibold text-blue-500 text-sm font-sora capitalize">
         {data.title}
       </h3>
-      <p className="text-gray-600 font-inter text-sm">{data.description}</p>
+      <p className=" font-inter text-sm mb-4">{data.description}</p>
       {data.link && (
         <a
           href={data.link}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-blue-500 text-sm underline"
+          className="text-green-600 bg-green-50 border border-green-200 rounded-md p-2 font-inter text-xs "
         >
-          Resource
+          Resource <LuExternalLink className="inline -mt-1"/>
         </a>
       )}
       <Handle type="source" position={Position.Bottom} />
