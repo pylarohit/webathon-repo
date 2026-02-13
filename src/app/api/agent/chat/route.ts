@@ -48,25 +48,25 @@ const localTools = {
       }
     },
   }),
-  retrival: tool({
-    description:
-      "Retrieve relevant information from Pinecone vector database based on user query. Useful when additional context or knowledge is required before answering.",
-    parameters: z.object({
-      userQuery: z
-        .string()
-        .describe("The user's natural language query to search in Pinecone"),
-    }),
-    // @ts-ignore
-    execute: async ({ userQuery }: { userQuery: string }) => {
-      try {
-        const result = await retrivalServer(userQuery);
-        return result;
-      } catch (err) {
-        console.error("Error in retrival tool:", err);
-        return "Failed to retrieve information.";
-      }
-    },
-  }),
+  // retrival: tool({
+  //   description:
+  //     "Retrieve relevant information from Pinecone vector database based on user query. Useful when additional context or knowledge is required before answering.",
+  //   parameters: z.object({
+  //     userQuery: z
+  //       .string()
+  //       .describe("The user's natural language query to search in Pinecone"),
+  //   }),
+  //   // @ts-ignore
+  //   execute: async ({ userQuery }: { userQuery: string }) => {
+  //     try {
+  //       const result = await retrivalServer(userQuery);
+  //       return result;
+  //     } catch (err) {
+  //       console.error("Error in retrival tool:", err);
+  //       return "Failed to retrieve information.";
+  //     }
+  //   },
+  // }),
   updateCareerTool: tool({
     description:
       "Update the selected career of a specific user in the userQuizData table. Use this when modifying an existing record or when user selects a new career.",
@@ -142,7 +142,6 @@ Your Main goal using tool is:
 -- detect the career user wants to pass it to updateCareerTool. along with userId.
 
 For accurate and personalized guidance, you can use two knowledge tools freely:
-(a) Retrieve relevant information from Pinecone.
 (b) Search the web in real time using Tavily.
 `;
 
