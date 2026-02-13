@@ -158,7 +158,7 @@ export function AppSidebar() {
               </Link>
             </SidebarMenuItem>
             {/* MY TRACKS */}
-            {/* <SidebarMenuItem
+            <SidebarMenuItem
               className={`flex cursor-pointer duration-200 ease-in-out rounded py-1 px-3
             ${
               pathname.startsWith("/home/my-tracks")
@@ -175,7 +175,7 @@ export function AppSidebar() {
                   </span>
                 </p>
               </Link>
-            </SidebarMenuItem> */}
+            </SidebarMenuItem>
            
             {/* MESSAGES */}
             <SidebarMenuItem

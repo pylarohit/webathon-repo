@@ -86,16 +86,16 @@ async function retrival(userQuery: string): Promise<string> {
   }
 }
 // GET selectedCareer Tool--------------------------------
-// async function getCareerTool(userId: any) {
-//   try {
-//     const career = await getSelectedCareer(userId);
-//     toast.success("User Career retrieved successfully!");
-//     return career;
-//   } catch (error) {
-//     console.error("Error in getCareerTool:", error);
-//     return null;
-//   }
-// }
+async function getCareerTool(userId: any) {
+  try {
+    const career = await getSelectedCareer(userId);
+    toast.success("User Career retrieved successfully!");
+    return career;
+  } catch (error) {
+    console.error("Error in getCareerTool:", error);
+    return null;
+  }
+}
 //  UPDATE selectedCareer tool----------------------------------------
 async function updateCareerTool(userId: any, selectedCareer: string) {
   try {
