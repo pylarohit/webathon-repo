@@ -128,7 +128,7 @@ export function AppSidebar() {
               </Link>
             </SidebarMenuItem>
             {/* Mentor Connect */}
-            {/* <SidebarMenuItem
+            <SidebarMenuItem
               className={`flex cursor-pointer hover:scale-105 duration-200 ease-in-out rounded px-2 py-1  ${
                 pathname === "/home/mentor-connect"
                   ? "bg-blue-400 scale-105 hover:bg-white/10"
@@ -141,7 +141,7 @@ export function AppSidebar() {
                   Mentor Connect
                 </p>
               </Link>
-            </SidebarMenuItem> */}
+            </SidebarMenuItem>
             {/* Career board */}
             <SidebarMenuItem
               className={`flex hover:bg-white/10 cursor-pointer hover:scale-105 duration-200 ease-in-out rounded px-2 py-1  ${
