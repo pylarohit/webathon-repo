@@ -32,7 +32,7 @@ interface RoadmapProps {
 // 🔹 Custom Node Component
 function CustomNode({ data }: any) {
   return (
-    <div className="bg-blue-50 border rounded-lg shadow-md p-3 w-64 relative">
+    <div className="bg-white border rounded-lg shadow-md p-3 w-[280px] relative">
       <div className="absolute -top-3 -left-3 w-6 h-6 bg-blue-600 text-white text-xs rounded-full flex items-center justify-center font-bold">
         {data.step}
       </div>
@@ -40,13 +40,13 @@ function CustomNode({ data }: any) {
       <h3 className="font-semibold text-blue-500 text-sm font-sora capitalize">
         {data.title}
       </h3>
-      <p className="text-gray-600 font-inter text-sm">{data.description}</p>
+      <p className="text-black font-inter text-sm mb-4">{data.description}</p>
       {data.link && (
         <a
           href={data.link}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-blue-500 text-sm underline"
+          className="text-green-500 font-inter bg-green-50 rounded-md p-2 border border-green-200 text-xs"
         >
           Resource
         </a>
