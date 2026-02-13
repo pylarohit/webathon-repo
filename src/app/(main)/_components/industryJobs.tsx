@@ -371,19 +371,14 @@ export default function CareerTabsDemo() {
         className="w-full"
         onValueChange={(val) => setActiveTab(val)}
       >
-        <TabsList className="grid w-full grid-cols-3 max-w-[700px] mx-auto mb-6 font-inter">
+        <TabsList className="grid w-full grid-cols-2 max-w-[700px] mx-auto mb-6 font-inter">
           <TabsTrigger
             value="jobs"
             className="data-[state=active]:bg-slate-800 data-[state=active]:text-white"
           >
             Jobs
           </TabsTrigger>
-          {/* <TabsTrigger
-            value="colleges"
-            className="data-[state=active]:bg-slate-800 data-[state=active]:text-white"
-          >
-            Colleges
-          </TabsTrigger> */}
+         
           <TabsTrigger
             value="courses"
             className="data-[state=active]:bg-slate-800 data-[state=active]:text-white"
